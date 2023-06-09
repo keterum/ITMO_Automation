@@ -1,5 +1,5 @@
 def task_2():
-    a = 7
+    a = 6
     b = 7
     if a > b:
         print(a)

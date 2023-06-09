@@ -44,3 +44,14 @@ def task_5():
     else:
         print('no')
 task_5()
+
+# def task_6():
+#     x = [-5, 6, 7, 8, 2]
+#     print(len(x[0:5] > 0))
+# task_6()
+
+def task_7(month: int, year: int):
+    days = 29
+    months_of_the_year = 12
+    return (month * days) + (year * months_of_the_year * days)
+print(task_7(3, 2))

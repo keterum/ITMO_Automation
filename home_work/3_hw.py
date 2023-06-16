@@ -45,10 +45,16 @@ def task_5():
         print('no')
 task_5()
 
-# def task_6():
-#     x = [-5, 6, 7, 8, 2]
-#     print(len(x[0:5] > 0))
-# task_6()   #Не разобралась как вытащить отдельное значение
+def task_6():
+    x = [-5, 6, 7, 8, 2]
+    y = 0
+    for i in x:
+        if i > 0:
+            y = y + 1
+    return y
+
+    # print(len(x[0:5] > 0))
+print(task_6())   #Не разобралась как вытащить отдельное значение
 
 def task_7(month: int, year: int):
     days = 29

@@ -47,7 +47,7 @@ print('\n')
 
 class Button:
 
-    def __init__(self, text, locator, type='кнопка'):
+    def __init__(self, text, locator='', type='кнопка'):
         self.text = text
         self.type = type
         self.locator = locator
@@ -55,15 +55,15 @@ class Button:
     def click(self):
        return "Клик по кнопке" + "{" + self.text + "}"
 
-text_box = Button('Text Box', '_')
-check_box = Button('Check Box', '_')
-radio_button = Button('Radio button', '_')
-web_tables = Button('Web tables', '_')
-buttons = Button('Buttons', '_')
-links = Button('Links', '_')
-br_links_im = Button('Broken links - Images', '_')
-up_and_down = Button('Upload and download', '_')
-dyn_prop = Button('Dynamic Properties', '_')
+text_box = Button('Text Box')
+check_box = Button('Check Box')
+radio_button = Button('Radio button')
+web_tables = Button('Web tables')
+buttons = Button('Buttons')
+links = Button('Links')
+br_links_im = Button('Broken links - Images')
+up_and_down = Button('Upload and download')
+dyn_prop = Button('Dynamic Properties')
 
 print(text_box.text)
 print(text_box.click())
